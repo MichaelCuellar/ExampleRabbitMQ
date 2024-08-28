@@ -1,0 +1,23 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: "consumer"
+  devtools:
+    add-properties: false
+  profiles:
+    include: local
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+aws:
+  dynamodb:
+    endpoint: "http://localhost:8010"
+  region: "us-west-1"
+
+app.async.withDLQRetry: true
+app.async.retryDelay: 1000
+app.async.maxRetries: 3

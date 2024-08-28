@@ -1,6 +1,6 @@
 dependencies {
     implementation project(':model')
+    implementation project(':usecase')
     implementation 'org.reactivecommons:async-commons-rabbit-starter:4.1.4'
     implementation 'org.springframework:spring-context'
-    implementation 'io.projectreactor.rabbitmq:reactor-rabbitmq:1.5.6'
 }
